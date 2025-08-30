@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="es-ar">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Estudio contable premium en Chaco. Servicios de contabilidad, impuestos, sueldos y auditorías con atención personalizada."
+    />
+    <title>FM y Asociados — Estudio Contable Premium</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <title>Primer despliegue</title>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation">
+      <div class="nav-logo">
+        <img src="img/logo.jpg" alt="Logo FM y Asociados" loading="lazy" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    </nav>
+
+    <!-- Fondo animado -->
+    <div class="fondo" aria-hidden="true"></div>
+    <div class="floating-elements" aria-hidden="true">
+      <div class="floating-element"></div>
+      <div class="floating-element"></div>
+      <div class="floating-element"></div>
+      <div class="floating-element"></div>
+    </div>
+
+    <!-- Hero -->
+    <header id="inicio" class="section hero">
+      <h1 class="animated fadeIn">FM y Asociados</h1>
+      <p class="animated fadeIn delay-1">
+        Tu tranquilidad financiera, nuestra misión
+      </p>
+      <a href="#contacto" class="btn animated fadeIn delay-2">Contáctanos</a>
+    </header>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="section animated fadeInUp">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Somos un estudio contable joven, comprometido con cada cliente.
+        Ofrecemos servicios de alta calidad tanto para empresas como para
+        particulares, priorizando la confianza, la transparencia y el
+        acompañamiento profesional en cada etapa.
+      </p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section animated fadeInUp">
+      <h2>Nuestros Servicios</h2>
+      <div class="cards">
+        <div class="card animated fadeInUp delay-1">
+          <h3>Contabilidad</h3>
+          <p>Balances, estados financieros y gestión contable integral.</p>
+        </div>
+        <div class="card animated fadeInUp delay-2">
+          <h3>Impuestos</h3>
+          <p>Declaraciones juradas y planificación fiscal estratégica.</p>
+        </div>
+        <div class="card animated fadeInUp delay-3">
+          <h3>Sueldos</h3>
+          <p>Liquidación de haberes y cargas sociales de manera confiable.</p>
+        </div>
+        <div class="card animated fadeInUp delay-4">
+          <h3>Auditorías</h3>
+          <p>Control y evaluación de procesos contables y financieros.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section animated fadeInUp">
+      <h2>Testimonios</h2>
+      <blockquote class="testimonial">
+        “Gracias a FM y Asociados tengo mis impuestos en orden y más tiempo para
+        mi empresa.”
+        <footer>- Cliente PyME</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        “Profesionales serios, atentos y comprometidos. Los recomiendo.”
+        <footer>- Cliente Particular</footer>
+      </blockquote>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section animated fadeInUp">
+      <h2>Contacto</h2>
+      <form
+        id="contact-form"
+        class="contact-form"
+        method="POST"
+        action="mailto:example@example.com"
+      >
+        <label for="name" class="sr-only">Nombre</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nombre"
+          required
+        />
+
+        <label for="email" class="sr-only">Correo</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Correo"
+          required
+        />
+
+        <label for="message" class="sr-only">Mensaje</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Mensaje"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 FM y Asociados — Todos los derechos reservados</p>
+      <div class="redes">
+        <a href="#" aria-label="Visitar nuestro sitio web">🌐</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📱</a>
+      </div>
+    </footer>
   </body>
 </html>
